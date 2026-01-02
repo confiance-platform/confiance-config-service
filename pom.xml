@@ -6,13 +6,23 @@
 
     <parent>
         <groupId>com.confiance</groupId>
-        <artifactId>confiance-backend</artifactId>
+        <artifactId>confiance-parent</artifactId>
         <version>1.0.0</version>
     </parent>
 
     <artifactId>config-service</artifactId>
     <name>Config Service</name>
     <description>Spring Cloud Config Server</description>
+
+    <repositories>
+        <repository>
+            <id>github-parent</id>
+            <url>https://maven.pkg.github.com/confiance-platform/confiance-parent</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
     <dependencies>
         <!-- Config Server -->
